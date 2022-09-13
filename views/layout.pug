@@ -3,5 +3,16 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="icon", href="/images/messenger.png")
   body
-    block content
+    header 
+      nav
+        ul
+          li: a(href="/") Home
+          li: a(href="/new") New Message
+          li: a(href="/about") About
+    main
+      block content
+    footer
+      p Axel C. Lopez @Copyright 2022 
+        a(href="https://github.com/lopezac") GitHub

@@ -1,0 +1,12 @@
+extends layout
+
+block content 
+  h1 New Message Form
+  form(method="POST" action="/new")
+    label(for="msgAuthor") Author Name
+    input(type="text" name="msgAuthor" required)
+
+    label(for="msgText") Message
+    input(type="text" name="msgText" required)
+
+    button(type="submit") Send
